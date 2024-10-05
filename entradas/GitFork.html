@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Colaborativo - Git Fork</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    
+    <div id="header">
+        <li><a href="../compartir/header.html"></a></li>
+    </div>
+
+    <main>
+        <h1>Git Fork</h1>
+            <h2>Hacer Fork del Repositorio</h2>
+                <h3>Accede al repositorio original</h3>  
+                    <p>Ve al repositorio en GitHub que deseas contribuir</p>  
+                        <img class="screenshoot" src="../img/Fork1.png" alt="Screnshoot de Repositorio">
+                <h3>Haz click en el botón Fork</h3>
+                    <p>En la esquina superior derecha de la página del repositorio, haz clic en el botón "Fork". Esto creará una copia del repositorio en tu cuenta de GitHub</p>
+                        <img class="screenshoot" src="../img/Fork2.png" alt="Screnshoot de Fork">
+            <h2>Clona tu fork</h2>
+                <h3>Ve a tu Fork</h3>
+                    <p>Accede a tu cuenta de GitHub y selecciona el fork que acabas de crear.</p>
+                <h3>Clona el repositorio</h3>
+                    <p>Haz clic en el botón verde "Code" y copia la URL. Luego, abre tu terminal y ejecuta el siguiente comando: git clone URL</p>
+                        <img src="../img/Fork3.png" alt="Screnshoot de git clone">
+            <h2>Configura tu repositorio remoto</h2>
+                <h3>Agrega el repositorio original como remoto</h3>
+                    <p>Navega a la carpeta de tu repositorio: cd "nombre-carpeta"</p>
+                    <p> Esto te permitirá obtener actualizaciones del repositorio original, ejecuta el siguiente comando: git remote add upstream URL_DEL_REPOSITORIO_ORIGINAL</p>
+                        <img src="../img/Fork4.png" alt="Screnshoot de cd y git remote upstream">
+                    <p>Pare revisar el estado de tus repositorios, usa el comando: git remote -v</p>
+                        <img src="../img/Fork5.png" alt="Screnshoot de git remote -v">
+            <h2>Crea una nueva rama</h2>
+                <p>Una buena practica es trabajar e una rama independiente para no afectar la principal, hasta que la mejora este completada, para crearla usa el siguiente comando: git checkout -b nombre-rama</p>
+                    <img src="../img/Fork6.png" alt="Screnshoot de it checkout -b nombre-rama">
+            <h2>Realiza tus cambios</h2>
+                <p>Ahora puedes realizar cambios en tus archivos, y Git rastreará esos cambios en la rama nueva-funcionalidad. Una vez que termines, puedes agregar los archivos y hacer un commit:git add y git commit -m "Agregué nueva funcionalidad", usa git status para verificarque el "commit" está correcto</p>
+                    <img src="../img/Fork7.png" alt="Screnshoot git commit -m y git status" >
+            <h2>Sincroniza tu Fork</h2>
+                <h3>Obten cambios del repositorio original</h3>
+                    <p>Usa los comandos: git checkout main, git fetch upstream y git merge upstream/main</p>
+                        <img src="../img/Fork8.png" alt="Screnshoot git checkout main, git fetch upstream y git merge upstream/main">
+                <h3>Pega la nueva rama en la principal</h3>
+                    <p>Usa los comandos: git checkout nombre-rama y git rebase main</p>
+                <h3>Carga tus cambios</h3>
+                    <p>Usa el comando: git push origin nombre-rama</p>
+                        <img src="../img/Fork9.png" alt="Screnshoot git rebase main">
+            <h2>Crea un Pull Request</h2>
+                <p>Ve a tu fok en GitHub</p>
+                <p>Haz clic en "Compare & Pull Request"</p>
+                <p>Rellena el formulario</p>
+                <P>Haz clic en "Create Pull Request"</P>
+                    <img src="../img/Fork10.png" alt="Screnshoot Pull Request">
+            <h2>Convenciones comunes</h2>
+                <h3>Ramas de Características (Feature Branches):</h3>
+                    <p>Formato: feature/nombre-descriptivo</p>
+                    <p>Ejemplo: feature/agregar-autenticacion</p>
+                <h3>Ramas de Corrección de Errores (Bugfix Branches):</h3>
+                    <p>Formato: bugfix/nombre-descriptivo</p>
+                    <p>bugfix/corregir-error-login</p>
+                <h3>Ramas de Mejoras (Improvement Branches):</h3> 
+                    <p>Formato: improvement/nombre-descriptivo</p>
+                    <p>Ejemplo: improvement/optimizar-carga-paginas</p>
+                <h3>Ramas de Refactorización (Refactor Branches):</h3>
+                    <p>Formato: refactor/nombre-descriptivo</p>
+                    <p>Ejemplo: refactor/renombrar-funciones</p>
+                <h3>Ramas de Documentación (Documentation Branches):</h3>
+                    <p>Formato: docs/nombre-descriptivo</p>
+                    <p>Ejemplo: docs/actualizar-readme</p>
+                <h3>Ramas de Pruebas (Testing Branches):</h3>
+                    <p>Formato: test/nombre-descriptivo</p>
+                    <p>Ejemplo: test/agregar-pruebas-automáticas</p>
+
+
+            
+
+                
+
+
+    </main>
+
+    
+    <div id="footer">
+        <li><a href="../compartir/footer.html"></a></li>
+    </div>
+
+    <script src="../js/scriptHeaderFooter.js"></script>
+</body>
+</html>
