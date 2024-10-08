@@ -19,3 +19,8 @@ function includeHTML() {
             document.getElementById("footer").innerHTML = data;
         });
 }
+
+// JavaScript para actualizar el año en el copyright
+document.addEventListener('DOMContentLoaded', function () {
+    document.getElementById('year').textContent = new Date().getFullYear();
+});
