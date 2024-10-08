@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
 // Función para incluir el header y el footer
 function includeHTML() {
     // Incluir el header
-    fetch('/blog-colaborativo/compartir/header.html')
+    fetch('/compartir/header.html')
         .then(response => {
             if (!response.ok) throw new Error('Error en la carga del header');
             return response.text();
@@ -19,7 +19,8 @@ function includeHTML() {
         .catch(error => console.error('Error:', error));
 
     // Incluir el footer
-    fetch('/blog-colaborativo/compartir/footer.html')
+    fetch('/compartir/footer.html')
+
         .then(response => {
             if (!response.ok) throw new Error('Error en la carga del footer');
             return response.text();
@@ -31,6 +32,6 @@ function includeHTML() {
 }
 
 // JavaScript para actualizar el año en el copyright
-document.addEventListener('DOMContentLoaded', function () {
+    document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('year').textContent = new Date().getFullYear();
 });
