@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Colaborativo - Git Fork</title>
+    <link rel="stylesheet" href="../css/styles.css">
+     <!-- Enlace a los estilos del header -->
+     <link rel="stylesheet" href="../css/header-styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <div class="logo-image">
+                <img src="../img/Logo-gato.jpeg" alt="my personal logo" class="logo">
+            </div>  
+        </div>
+        <nav>
+            <div class="togglebtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="navlinks">
+                <li><a href="../index.html">Inicio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="login-container">
+        <div class="login-box">
+            <form action="#">
+                <h2>Iniciar sesión</h2>
+                
+                <div class="input-group">
+                    <i class="fa-regular fa-envelope"></i>
+                    <input type="email" id="email" placeholder="Correo electrónico" required>
+                </div>
+
+                <div class="input-group">
+                    <i class="fa-solid fa-user-lock"></i>
+                    <input type="password" id="password" placeholder="Contraseña" required>
+                </div>
+
+                <div class="remember-forgot">
+                    <label>
+                        <input type="checkbox">
+                        Recordarme
+                    </label>
+                    <a href="#" class="forgot-link">Olvidé la contraseña</a>
+                </div>
+
+                <button type="submit" class="login-button">Acceder</button>
+
+                <div class="register-link">
+                    <p>No tengo cuenta <a href="../entradas/register.html">Crear cuenta</a></p>
+                </div>
+            </form>
+        </div>
+    </main>
+
+   
+    <footer id="footer"></footer>
+
+    <script src="../js/scriptHeaderFooter.js"></script>
+</body>
+</html>

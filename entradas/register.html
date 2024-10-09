@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Colaborativo - Git Fork</title>
+    <link rel="stylesheet" href="../css/styles.css">
+     <!-- Enlace a los estilos del header -->
+     <link rel="stylesheet" href="../css/header-styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <div class="logo-image">
+                <img src="../img/Logo-gato.jpeg" alt="my personal logo" class="logo">
+            </div>  
+        </div>
+        <nav>
+            <div class="togglebtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="navlinks">
+                <li><a href="../index.html">Inicio</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <header id="header"></header>
+
+    <main class="register-container">
+        <div class="register-box">
+            <form action="#">
+                <h2>Crear Cuenta</h2>
+
+                <div class="input-group">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" id="username" placeholder="Nombre de Usuario" required>
+                </div>
+
+                <div class="input-group">
+                    <i class="fa-regular fa-envelope"></i>
+                    <input type="email" id="email" placeholder="Correo Electrónico" required>
+                </div>
+
+                <div class="input-group">
+                    <i class="fa-solid fa-key"></i>
+                    <input type="password" id="password" placeholder="Contraseña" required>
+                </div>
+
+                <div class="input-group">
+                    <i class="fa-solid fa-key"></i>
+                    <input type="password" id="confirm-password" placeholder="Confirmar Contraseña" required>
+                </div>
+
+                <button type="submit" class="register-button">Registrar</button>
+
+                <div class="back-to-login">
+                    <p>¿Ya tienes cuenta? <a href="login.html">Inicia sesión aquí</a></p>
+                </div>
+            </form>
+        </div>
+    </main>
+
+   
+    <footer id="footer"></footer>
+
+    <script src="../js/scriptHeaderFooter.js"></script>
+</body>
+</html>
