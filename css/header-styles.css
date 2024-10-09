@@ -1,0 +1,105 @@
+.header {
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #1B263B;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-image img {
+    max-width: 100%; 
+    height: auto; 
+    display: block; 
+    border-radius: 50%;
+    padding: 5px; 
+    width: 120px;
+    transition: transform 0.3s ease;
+}
+
+.logo-image img:hover {
+    transform: scale(1.05);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.togglebtn {
+    width: 30px;
+    height: 25px;
+    position: relative;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.togglebtn span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 2px;
+}
+
+.navlinks {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navlinks li {
+    margin-left: 30px;
+}
+
+.navlinks li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    transition: color 0.3s ease, font-size 0.3s ease;
+}
+
+.navlinks li a:hover {
+    color: #007BFF;
+    font-size: 19px;
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 15px 5%;
+    }
+
+    .togglebtn {
+        display: flex;
+    }
+
+    .navlinks {
+        position: absolute;
+        top: 70px;
+        right: 10%;
+        background-color: #fff;
+        flex-direction: column;
+        width: 150px;
+        border: 1px solid #ddd;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        display: none;
+    }
+
+    .navlinks li {
+        margin: 15px 0;
+    }
+
+    .navlinks.active {
+        display: flex;
+    }
+}
