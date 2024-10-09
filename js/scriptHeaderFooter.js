@@ -1,36 +1,20 @@
-// scriptHeaderFooter.js
-
-// Script para incluir el header y el footer en todas las páginas
-document.addEventListener("DOMContentLoaded", function() {
-    includeHTML();
-});
-
-// Función para incluir el header y el footer
-function includeHTML() {
-    // Incluir el header
-    fetch('/blog-colaborativo/compartir/header.html')
-        .then(response => {
-            if (!response.ok) throw new Error('Error en la carga del header');
-            return response.text();
-        })
-        .then(data => {
-            document.getElementById("header").innerHTML = data;
-        })
-        .catch(error => console.error('Error:', error));
-
-    // Incluir el footer
-    fetch('/blog-colaborativo/compartir/footer.html')
-        .then(response => {
-            if (!response.ok) throw new Error('Error en la carga del footer');
-            return response.text();
-        })
-        .then(data => {
-            document.getElementById("footer").innerHTML = data;
-        })
-        .catch(error => console.error('Error:', error));
-}
 
 // JavaScript para actualizar el año en el copyright
-document.addEventListener('DOMContentLoaded', function () {
-    document.getElementById('year').textContent = new Date().getFullYear();
-});
+function updateYear() {
+    const yearElement = document.getElementById('year');
+    if (yearElement) {
+        yearElement.textContent = new Date().getFullYear();
+    } else {
+        console.warn("Elemento 'year' no encontrado en el footer.");
+    }
+}
+
+//Javascript para la barra de navegación 
+var togglebtn=document.querySelector(".togglebtn");
+var nav=document.querySelector(".navlinks");
+var links=document.querySelector(".navlinks li");
+
+togglebtn.addEventListener("click", function(){
+    this.classList.toggle("click");
+    nav.classList.toggle("open");
+})

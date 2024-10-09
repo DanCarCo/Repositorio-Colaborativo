@@ -5,11 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Principal</title>
     <link rel="stylesheet" href="css/styles.css">
+    <!-- Enlace a los estilos del header -->
+    <link rel="stylesheet" href="css/header-styles.css">
 </head>
 <body>
-    <div id="header">
-        <li><a href="compartir/header.html"></a></li>
-    </div>
+    <header class="header">
+        <div class="logo">
+            <div class="logo-image">
+                <img src="img/Logo-gato.jpeg" alt="my personal logo" class="logo">
+            </div>  
+        </div>
+        <nav>
+            <div class="togglebtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="navlinks">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="./entradas/Login.html">Iniciar sesión</a></li>
+            </ul>
+        </nav>
+    </header>
     <main>
         <h1>Blog Colaborativo</h1>
         <p>Este blog fue creado como parte de una actividad académica.</p>
@@ -17,7 +34,7 @@
         <p>Explora las últimas entradas del blog.</p>
 
         <ul>
-            <li><a href="blog-colaborativo/entradas/blog1.html">Entrada 1</a></li>
+            <li><a href="entradas/blog1.html">Entrada 1</a></li>
             <li><a href="entradas/GitFork.html">Usando Git Fork</a></li>
             <li><a href="">Entrada 3</a></li>
             <li><a href="">Entrada 4</a></li>
@@ -25,10 +42,12 @@
     </main>
 
     <div id="footer">
-        <li><a href="compartir/footer.html"></a></li>
+            <p class="copyright">&copy; <span id="year"></span>&copy; Blog Colaborativo. Todos los derechos reservados.</p>
     </div>
+    
+    
 
+    <script src="js/scriptHeaderFooter.js"> </script>
 
-    <script src="js/scriptHeaderFooter.js"></script>
 </body>
 </html>
