@@ -1,0 +1,639 @@
+/* General Styles */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF; /* Fondo principal */
+    line-height: 1.5;
+}
+
+input[type="text"] {
+    width: 60%;
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 2em;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+}
+input {
+    width: 5em;
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 2em;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Estilo para los botones */
+button {
+    background-color: #4CAF50; /* Color verde */
+    color: white;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+/* Efecto hover en los botones */
+button:hover {
+    background-color: #45a049;
+}
+
+img {
+    display: block;
+    margin: auto;
+    
+    max-width: 100%; /* Para que la imagen no se desborde */
+}
+/* Estilo para el div de resultado/respuesta */
+#resultado3, #respuesta {
+    padding: 10px;
+    margin-top: 15px;
+    border: 1px solid #ddd;
+    border-radius: 2em;
+    background-color: #f9f9f9;
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+
+
+/* Añadir algo de margen inferior a los elementos para mayor espacio */
+input, button {
+    margin-bottom: 10px;
+}
+
+/* Header */
+header {
+    background-color: #1B263B; /* Azul oscuro */
+    color: #FFFFFF; /* Blanco para el texto */
+    padding: 1.25rem;
+    text-align: center;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* Login Container */
+.login-container, .register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh; 
+    background-color: #B0C4DE; /* Azul claro */
+}
+
+.login-box, .register-box {
+    background: #FFFFFF; /* Fondo blanco */
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 25rem;
+}
+
+/* Input Groups */
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    border: 1px solid #E0E0E0; /* Borde gris claro */
+    padding: 0.8rem 1rem;
+    border-radius: 0.5rem;
+    transition: border-color 0.3s;
+}
+
+.input-group i {
+    margin-right: 0.5rem;
+    color: #4A6FA5; /* Azul medio para íconos */
+}
+
+.input-group input {
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    flex-grow: 1;
+}
+
+.input-group:hover {
+    border-color: #4A6FA5; /* Azul medio */
+}
+
+/* Remember/Forgot section */
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.remember-forgot label {
+    font-size: 0.9rem;
+    color: #555555;
+}
+
+.forgot-link {
+    color: #4A6FA5; /* Azul medio */
+    text-decoration: none;
+}
+
+.forgot-link:hover {
+    text-decoration: underline;
+}
+
+/* Buttons */
+.login-button, .register-button {
+    width: 100%;
+    background-color: #4A6FA5; /* Azul medio */
+    color: #FFFFFF;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-button:hover, .register-button:hover {
+    background-color: #1B263B; /* Azul oscuro */
+}
+
+/* Register Link */
+.register-link, .back-to-login {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.register-link p, .back-to-login p {
+    font-size: 0.9rem;
+    color: #333333;
+}
+
+.register-link a, .back-to-login a {
+    color: #4A6FA5; /* Azul medio */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.register-link a:hover, .back-to-login a:hover {
+    text-decoration: underline;
+}
+
+/* Navigation */
+nav {
+    margin-top: 0.625rem;
+}
+
+nav a {
+    color: #FFFFFF; /* Blanco para el texto */
+    text-decoration: none;
+    margin: 0 0.9375rem;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main Section */
+main {
+    margin: 1.25rem;
+    padding: 1.25rem;
+    background-color: #B0C4DE; /* Azul claro */
+    border-radius: 0.5rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+    color: #000000; /* Negro para los títulos */
+    text-align: center;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.625rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 0.625rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+    margin-bottom: 0.625rem;
+}
+
+p,li {
+    color: #000000; /* Negro para el texto principal */
+    font-size: 1.5rem;
+    margin-bottom: 0.9375rem;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 0.625rem;
+    list-style-type: none;
+}
+
+/* Links */
+a {
+    color: #4A6FA5;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+    position: relative;
+}
+
+a:hover {
+    color: #2A4D91;
+    text-decoration: none;
+    transform: scale(1.05);
+}
+
+a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background-color: #4A6FA5;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+a:hover::after {
+    transform: scaleX(1);
+}
+
+/* Footer */
+footer {
+    margin-top: 1.25rem;
+    font-size: 0.9rem;
+    color: #888; /* Gris claro */
+    text-align: center;
+    background-color: #E0E0E0; /* Gris claro */
+    padding: 0.625rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Back to Index Button */
+.back-to-index {
+    text-align: center;
+    margin: 1.25rem 0;
+}
+
+.back-button {
+    padding: 0.625rem 1.25rem;
+    background-color: #4A6FA5; /* Azul medio para botones */
+    color: white;
+    text-decoration: none;
+    border-radius: 0.3125rem;
+    transition: background-color 0.3s;
+}
+
+.back-button:hover {
+    background-color: #1B263B; /* Azul oscuro */
+}
+
+/* Image Container */
+.image-container {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    margin: 1.5rem 0; 
+}
+
+.screenshoot {
+    max-width: 80%;
+    height: auto;
+    border-radius: 0.625rem;
+    box-shadow: 0.32rem 0.44rem 1.6rem #1B263B;
+    transition: transform 0.3s ease-in-out;
+}
+
+.screenshoot:hover {
+    transform: scale(1.05);
+}
+
+
+/* Estilos para la sección de Diffie-Hellman con Grid (igual que curvas elípticas) */
+#diffie-hellman {
+    max-width: 500px; /* Limitar el ancho para mayor legibilidad */
+    margin: 0 auto; /* Centrar la sección horizontalmente */
+    padding: 20px;
+    background-color: #f0f0f0; /* Fondo claro para que resalte */
+    border-radius: 10px; /* Bordes redondeados */
+    text-align: center; /* Centrar el texto */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    display: grid; /* Usar grid para organizar los elementos */
+    grid-template-columns: 1fr; /* Hacer que todos los elementos ocupen una columna */
+    grid-gap: 15px; /* Espaciado entre los elementos */
+}
+
+/* Estilo de los inputs para hacerlos consistentes */
+#diffie-hellman input[type="number"] {
+    width: 100%; /* Los inputs ocupan todo el ancho */
+    padding: 10px;
+    margin: 0; /* Sin margen adicional */
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Estilo del botón */
+#diffie-hellman button {
+    background-color: #3498db; /* Azul llamativo */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+
+/* Estilo para el div de resultado */
+#diffie-hellman #resultado1 {
+    margin-top: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+
+
+
+/* Estilos para la sección de curvas elípticas con Grid */
+#curvas-elipticas {
+    max-width: 500px; /* Limitar el ancho para mayor legibilidad */
+    margin: 0 auto; /* Centrar la sección horizontalmente */
+    padding: 20px;
+    background-color: #f0f0f0; /* Fondo claro para que resalte */
+    border-radius: 10px; /* Bordes redondeados */
+    text-align: center; /* Centrar el texto */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    display: grid; /* Usar grid para organizar los elementos */
+    grid-template-columns: 1fr; /* Hacer que todos los elementos ocupen una columna */
+    grid-gap: 15px; /* Espaciado entre los elementos */
+}
+
+/* Estilo de los inputs para hacerlos consistentes */
+#curvas-elipticas input[type="number"] {
+    width: 100%; /* Los inputs ocupan todo el ancho */
+    padding: 10px;
+    margin: 0; /* Sin margen adicional */
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Estilo del botón */
+button {
+    background-color: #3498db; /* Azul llamativo */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9; /* Cambia de color al hacer hover */
+}
+
+/* Estilo para el div de resultado */
+#curvas-elipticas #resultado2 {
+    margin-top: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+
+
+
+/* Estilos para la sección del Hash SHA-256 */
+#hash-sha256 {
+    text-align: center; /* Centrar contenido */
+}
+
+/* Estilos para la sección del Asistente de Encriptación */
+#asistente-encriptacion {
+    text-align: center;
+    /* background-color: #e0f7fa; Fondo de color suave para el asistente */
+}
+
+/* Estilo de los inputs para ambas secciones */
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Estilo para los botones */
+button {
+    /* background-color: #3498db; Azul llamativo */
+    color: white;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+/* Efecto hover en los botones */
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Estilo para los divs de resultado */
+#resultado3, #respuesta {
+    padding: 10px;
+    margin-top: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Estilo específico para el Asistente de Encriptación */
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    h1, h2, h3 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    .screenshoot {
+        max-width: 95%;
+    }
+
+    .login-box, .register-box {
+        padding: 1.5rem;
+    }
+}
+
+
+/* Estilos para la sección de Hash SHA-256 */
+#hash-sha256 {
+    max-width: 600px; /* Limitar el ancho de la sección */
+    margin: 0 auto; /* Centrar la sección */
+    padding: 20px;
+    background-color: #f0f0f0; /* Fondo claro */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    text-align: center; /* Centrar el contenido */
+    margin-bottom: 30px; /* Espacio inferior */
+}
+
+/* Estilos para el input de texto */
+#hash-sha256 input[type="text"] {
+    width: 100%; /* Ancho total */
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Estilo para el botón */
+#hash-sha256 button {
+    background-color: #3498db; /* Color azul */
+    color: white;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+/* Efecto hover en el botón */
+#hash-sha256 button:hover {
+    background-color: #2980b9; /* Color más oscuro al pasar el ratón */
+}
+
+/* Estilos para el div de resultado */
+#hash-sha256 #resultado3 {
+    padding: 10px;
+    margin-top: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Añadir algo de margen inferior a los elementos para mayor espacio */
+#hash-sha256 input, #hash-sha256 button {
+    margin-bottom: 15px;
+}
+
+
+/* Estilos para la sección del Asistente de Encriptación */
+#asistente-encriptacion {
+    max-width: 600px; /* Limitar el ancho de la sección */
+    margin: 0 auto; /* Centrar la sección */
+    padding: 20px;
+    text-align: center; /* Centrar el contenido */
+    margin-bottom: 30px; /* Espacio inferior */
+}
+
+/* Estilos para el input de texto */
+#asistente-encriptacion input[type="text"] {
+    width: 100%; /* Ancho total */
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Estilo para el botón */
+#asistente-encriptacion button {
+    color: white;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+/* Efecto hover en el botón */
+#asistente-encriptacion button:hover {
+    background-color: #007c91; /* Azul más oscuro al pasar el ratón */
+}
+
+/* Estilos para el div de respuesta */
+#asistente-encriptacion #respuesta {
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 4px;
+    background-color: #fff;
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Añadir algo de margen inferior a los elementos para mayor espacio */
+#asistente-encriptacion input, #asistente-encriptacion button {
+    margin-bottom: 15px;
+}
