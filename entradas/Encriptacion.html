@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Blog sobre Criptografía Extensa</title>
+    <link rel="stylesheet" href="../css/header-styles.css">
+    <link rel="stylesheet" href="../css/styles-encriptacion.css">
+    <script src="../js/script-encriptacion.js"></script>
+
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <div class="logo-image">
+                <img src="../img/Logo-gato.jpeg" alt="my personal logo" class="logo">
+            </div>  
+        </div>
+        <nav>
+            <div class="togglebtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="navlinks">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../entradas/Login.html" >Iniciar sesión</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <section id="asistente-encriptacion">
+            <h2>Consulta a tu Asistente de Encriptación</h2>
+            <p>Escribe tu pregunta y consulta la API para obtener una respuesta.</p>
+            
+            <input type="text" id="pregunta" placeholder="Escribe tu pregunta aquí">
+            
+            <button onclick="enviarPregunta()">Enviar Pregunta</button>
+            
+            <div id="respuesta">Aún no has hecho una pregunta. El resultado aparecerá aquí cuando envíes tu consulta.</div>
+        </section>
+
+        
+        <!-- Sección Historia -->
+        <section>
+            <h2>1. Historia del Algoritmo de Diffie-Hellman</h2>
+            <p>El algoritmo de Diffie-Hellman fue propuesto en 1976 por Whitfield Diffie y Martin Hellman. Este hito marcó el comienzo de una nueva era en la criptografía moderna, permitiendo el intercambio de claves de manera segura en un canal público, sin necesidad de compartir previamente una clave secreta a través de un canal seguro.</p>
+            
+            <h3>El problema del intercambio de claves</h3>
+            <p>Antes de la invención del algoritmo, los sistemas de cifrado dependían de claves simétricas, donde tanto el emisor como el receptor necesitaban conocer la misma clave secreta para encriptar y desencriptar información. Sin embargo, el principal desafío era cómo intercambiar esa clave sin que terceros la interceptaran.</p>
+            
+            <p>Este problema era especialmente complicado en redes abiertas, como Internet, donde no existía un canal seguro para compartir la clave secreta. El avance de Diffie y Hellman permitió que dos partes generaran una clave compartida usando información pública, sin tener que intercambiar de manera directa la clave secreta.</p>
+            
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a3/Diffie-Hellman-Schl%C3%BCsselaustausch.png" alt="Whitfield Diffie" width="300">
+            
+            <h3>Cómo funciona el algoritmo</h3>
+            <p>El algoritmo de Diffie-Hellman se basa en la dificultad de resolver el problema del logaritmo discreto, lo que lo hace muy seguro. A continuación se describen los pasos básicos del algoritmo:</p>
+            <ul>
+                <li><strong>1. Selección de parámetros públicos:</strong> Ambas partes acuerdan un número primo \( p \) y una base \( g \). Estos valores son públicos y conocidos por todos.</li>
+                <li><strong>2. Generación de claves privadas:</strong> Cada participante elige un número secreto como clave privada (Alicia elige \( a \) y Bob elige \( b \)).</li>
+                <li><strong>3. Cálculo de claves públicas:</strong> Cada parte genera una clave pública calculando \( A = g^a \mod p \) y \( B = g^b \mod p \), y luego intercambian sus claves públicas.</li>
+                <li><strong>4. Cálculo de la clave compartida:</strong> Usando la clave pública del otro, cada parte calcula una clave compartida. Alicia calcula \( K = B^a \mod p \) y Bob calcula \( K = A^b \mod p \), y ambas claves coinciden.</li>
+            </ul>
+        
+            <h3>Impacto y evolución</h3>
+            <p>El algoritmo de Diffie-Hellman fue el primer paso hacia la criptografía de clave pública, también conocida como criptografía asimétrica. Poco después, surgió el algoritmo RSA, que permitía no solo el intercambio de claves sino también la encriptación y la firma digital.</p>
+            
+            <p>Hoy en día, Diffie-Hellman sigue siendo fundamental en protocolos como TLS (Transport Layer Security), que asegura las comunicaciones en Internet. Además, el algoritmo ha evolucionado en variantes más modernas, como el intercambio de claves Diffie-Hellman sobre curvas elípticas (ECDH), que es más eficiente en términos de recursos computacionales.</p>
+            
+            <h3>Reconocimientos y Premios</h3>
+            <p>Whitfield Diffie y Martin Hellman fueron reconocidos con el prestigioso Premio Turing en 2015 por su contribución revolucionaria a la criptografía moderna, destacando el impacto de su trabajo en la seguridad de la información y las comunicaciones digitales.</p>
+        
+            <h3>Premio Nobel de Física 2024: John Hopfield y Geoffrey Hinton</h3>
+            <p>En octubre de 2024, los profesores <strong>John Hopfield</strong> (91) y <strong>Geoffrey Hinton</strong> (76) fueron galardonados con el Premio Nobel de Física por sentar las bases del <strong>aprendizaje automático</strong> y contribuir significativamente al desarrollo de la <strong>inteligencia artificial</strong>. Sus descubrimientos en redes neuronales artificiales han sido fundamentales para el aprendizaje automático.</p>
+            
+            <p>Hopfield, profesor en la Universidad de Princeton, y Hinton, conocido como "el padrino de la inteligencia artificial", de la Universidad de Toronto, han transformado cómo las máquinas aprenden, lo que ha sido clave en el avance de la IA moderna.</p>
+            
+            <p>Al recibir el premio, Hinton comentó: "Estoy estupefacto. No tenía idea de que esto sucedería", reflejando la humildad con la que estos pioneros han visto el desarrollo de la IA.</p>
+        
+            <p>Este premio reconoce no solo el impacto en la criptografía, sino también en el aprendizaje automático, un campo que sigue creciendo rápidamente con aplicaciones en diversas áreas, desde la tecnología hasta la medicina.</p>
+        
+            <!-- Menú de navegación para pruebas interactivas -->
+            <nav>
+                <h3>Continúa con las pruebas interactivas:</h3>
+                <ul>
+                    <li><a href="#diffie-hellman">Prueba interactiva del Algoritmo de Diffie-Hellman</a></li>
+                    <li><a href="#curvas-elipticas">Prueba interactiva de Criptografía de Curvas Elípticas</a></li>
+                    <li><a href="#hash-sha256">Prueba interactiva de Hash SHA-256</a></li>
+                </ul>
+            </nav>
+        </section>
+        
+
+        <!-- Ejemplo 1: Diffie-Hellman -->
+        <section id="diffie-hellman">
+            <h3>1.1 Prueba interactiva del Algoritmo de Diffie-Hellman</h3>
+            <p>Ingresa los valores para generar una clave compartida entre A y B.</p>
+            
+            <label for="g">Generador (g):</label>
+            <input type="number" id="g" value="5">
+            
+            <label for="p">Número primo (p):</label>
+            <input type="number" id="p" value="23">
+            
+            <label for="a">Número secreto de A (a):</label>
+            <input type="number" id="a" value="6">
+            
+            <label for="b">Número secreto de B (b):</label>
+            <input type="number" id="b" value="15">
+            
+            <button onclick="calcularClaveCompartida()">Calcular Clave Compartida</button>
+            
+            <div id="resultado1">Aún no has generado la clave compartida. El resultado aparecerá aquí después de calcularla.</div>
+
+        </section>
+        
+
+        <!-- Sección Historia -->
+        <section>
+            <h2>2. Criptografía de Curvas Elípticas</h2>
+            <p>Las curvas elípticas son fundamentales en la criptografía moderna, ya que ofrecen un cifrado fuerte con claves más pequeñas en comparación con otros métodos como RSA. Estas fueron propuestas en 1985 por Neal Koblitz y Victor Miller de forma independiente.</p>
+            <img src="https://www.keepersecurity.com/blog/wp-content/uploads/2023/06/image-2.png" alt="Curva Elíptica" width="400">
+            <p>La principal ventaja de la criptografía de curvas elípticas (ECC) es que ofrece un nivel de seguridad equivalente a RSA, pero con claves de mucho menor tamaño, lo que hace que sea más eficiente en términos de procesamiento y almacenamiento.</p>
+        </section>
+
+        <!-- Ejemplo 2: Criptografía de Curvas Elípticas -->
+        <section id="curvas-elipticas">
+            <h3>2.1 Prueba interactiva de Criptografía de Curvas Elípticas</h3>
+            <p>Ingresa los valores para duplicar un punto en una curva elíptica.</p>
+            <label for="x">Coordenada x: </label>
+            <input type="number" id="x" value="3"><br>
+            <label for="y">Coordenada y: </label>
+            <input type="number" id="y" value="6"><br>
+            <label for="a2">Valor de a:      </label>
+            <input type="number" id="a2" value="2"><br><br>
+            <label for="p2">Número primo p: </label>
+            <input type="number" id="p2" value="97"><br><br>
+        
+            <button onclick="calcularPuntoDoble()">Calcular 2P</button>
+            <div id="resultado2">Aún no has calculado el punto duplicado. El resultado aparecerá aquí después de calcularlo.</div>
+
+        </section>
+
+        <!-- Sección Historia -->
+        <section>
+            <h2>3. Introducción a los Hashes y SHA-256</h2>
+            <p>SHA-256 es parte de la familia de algoritmos SHA-2, desarrollado por la Agencia de Seguridad Nacional (NSA) en 2001. Es ampliamente utilizado en tecnologías como blockchain, donde se requiere una función hash criptográfica segura para validar transacciones.</p>
+            <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/0*xxnniyrvhnHLTbtF.png" alt="SHA-256" width="400">
+            <p>Los hashes son funciones que convierten datos de entrada en una cadena de caracteres de longitud fija. La característica más importante de un hash es que es de "una sola vía", lo que significa que no se puede revertir fácilmente, garantizando así la seguridad.</p>
+        </section>
+
+        <!-- Ejemplo 3: Generar un Hash SHA-256 -->
+        <section id="hash-sha256">
+            <h3>3.1 Prueba interactiva de Hash SHA-256</h3>
+            <p>Ingresa un mensaje para generar su hash SHA-256.</p>
+            
+            <label for="mensaje">Mensaje: </label>
+            <input type="text" id="mensaje" value="Hola, mundo">
+            
+            <button onclick="generarHash()">Generar Hash</button>
+            
+            <div id="resultado3">Aún no has generado el hash. El resultado aparecerá aquí después de calcularlo.</div>
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p class="copyright">&copy; <span id="year"></span>&copy; Blog Colaborativo. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
